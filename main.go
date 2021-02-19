@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// var card string = "Ace of Spades"
 	//BOTH of these are the same
@@ -14,15 +16,17 @@ func main() {
 
 	// cards.print()
 
-	hand, remainingCards := deal(cards, 5)
+	// hand, remainingCards := deal(cards, 5)
 
-	hand.print()
-	remainingCards.print()
+	// hand.print()
+	// remainingCards.print()
 
 	//CONVERTING types similar to Casting in Java
 	// greeting := "Hi There!"
 
 	// fmt.Println([]byte(greeting))
+
+	fmt.Println(cards.toString())
 
 }
 
