@@ -13,6 +13,7 @@ func main() {
 	// fmt.Println(card)
 
 	cards := []string{newCard(), newCard(), "Ace of Diamonds"}
+	cards = append(cards, "Six of Spades")
 
 	fmt.Println(cards)
 }
