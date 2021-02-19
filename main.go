@@ -19,6 +19,11 @@ func main() {
 	hand.print()
 	remainingCards.print()
 
+	//CONVERTING types similar to Casting in Java
+	// greeting := "Hi There!"
+
+	// fmt.Println([]byte(greeting))
+
 }
 
 //To run MULTPIPLE Files you call them in the same GO RUN (go run main.go deck.go)
