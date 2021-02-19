@@ -57,4 +57,6 @@ func newDeckFromFile(filename string) deck{
 		//This will Close the program it must be ANYTHING except 0
 		os.Exit(1)
 	}
+
+	s := strings.Split( string(bs), "," )
 }
