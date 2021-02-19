@@ -8,9 +8,13 @@ func main() {
 	// card := "Ace of Spades"
 	//ONLY use ":=" when Initializing the value (card = "NEW VALUE")
 
-	card := newCard()
+	// card := newCard()
 
-	fmt.Println(card)
+	// fmt.Println(card)
+
+	cards := []string{newCard(), newCard(), "Ace of Diamonds"}
+
+	fmt.Println(cards)
 }
 
 func newCard() string {
