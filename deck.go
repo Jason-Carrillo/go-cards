@@ -10,7 +10,7 @@ type deck []string
 func newDeck() deck {
 	cards := deck{}
 
-	cardSuits := []string{"Spades", "Diamonds", "Hears", "Clubs"}
+	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
 	cardValues := []string{"Ace", "Two", "Three", "Four"}
 
 	// Replace values like indexes with an "_" to tell Go that we aren't going to use it
@@ -28,4 +28,8 @@ func (d deck) print() {
 	for i, card := range d {
 		fmt.Println(i, card)
 	}
+}
+
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
 }
