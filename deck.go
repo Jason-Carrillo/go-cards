@@ -13,6 +13,7 @@ func newDeck() deck {
 	cardSuits := []string{"Spades", "Diamonds", "Hears", "Clubs"}
 	cardValues := []string{"Ace", "Two", "Three", "Four"}
 
+	// Replace values like indexes with an "_" to tell Go that we aren't going to use it
 	for _, suit := range cardSuits {
 		for _, value := range cardValues {
 			cards = append(cards, value+" of "+suit)

@@ -10,8 +10,7 @@ func main() {
 
 	// fmt.Println(card)
 
-	cards := deck{newCard(), newCard(), "Ace of Diamonds"}
-	cards = append(cards, "Six of Spades")
+	cards := newDeck()
 
 	cards.print()
 
@@ -19,6 +18,6 @@ func main() {
 
 //To run MULTPIPLE Files you call them in the same GO RUN (go run main.go deck.go)
 
-func newCard() string {
-	return "Five of Diamonds"
-}
+// func newCard() string {
+// 	return "Five of Diamonds"
+// }
