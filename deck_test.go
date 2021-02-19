@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"os"
+	"testing"
+)
 
 // TEST function are all first character UPPER case NOT standard camelCase
 func TestNewDeck(t *testing.T) {
@@ -20,5 +23,16 @@ func TestNewDeck(t *testing.T) {
 }
 
 func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
+	os.Remove("_decktesting")
 
+	deck := newDeck()
+	deck.saveToFile("_decktesting")
+
+	loadedDeck := newDeckFromFile("_decktesting")
+
+	if len(loadedDeck) != 16 {
+		t.Errorf("Expected 16 cards in a deck, got %v", len(loadedDeck))
+	}
+
+	os.Remove("_decktesting")
 }
