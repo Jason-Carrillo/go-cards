@@ -53,6 +53,8 @@ func newDeckFromFile(filename string) deck{
 		// option #1 - log error and return a call to newDeck()
 		// option #2 - Log error and entirely quite the program
 		fmt.Println("Error:", err)
+
+		//This will Close the program it must be ANYTHING except 0
 		os.Exit(1)
 	}
 }
