@@ -10,7 +10,7 @@ func main() {
 
 	// fmt.Println(card)
 
-	cards := newDeck()
+	// cards := newDeck()
 
 	// cards.print()
 
@@ -27,7 +27,11 @@ func main() {
 	// PRINTS entire cards as 1 String
 	// fmt.Println(cards.toString())
 
-	cards.saveToFile("my_cards")
+	//Will create cards and save them to a new file
+	// cards.saveToFile("my_cards")
+
+	cards := newDeckFromFile("my_cards")
+	cards.print()
 
 }
 
