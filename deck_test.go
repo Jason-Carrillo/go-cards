@@ -18,3 +18,7 @@ func TestNewDeck(t *testing.T) {
 		t.Errorf("Expected last card to be Four of Clubs but got ", d[d.len-1])
 	}
 }
+
+func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
+
+}
