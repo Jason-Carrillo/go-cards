@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// var card string = "Ace of Spades"
 	//BOTH of these are the same
@@ -15,10 +13,11 @@ func main() {
 	cards := deck{newCard(), newCard(), "Ace of Diamonds"}
 	cards = append(cards, "Six of Spades")
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
+
 }
+
+//To run MULTPIPLE Files you call them in the same GO RUN (go run main.go deck.go)
 
 func newCard() string {
 	return "Five of Diamonds"
