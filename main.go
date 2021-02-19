@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// var card string = "Ace of Spades"
 	//BOTH of these are the same
@@ -26,7 +24,10 @@ func main() {
 
 	// fmt.Println([]byte(greeting))
 
-	fmt.Println(cards.toString())
+	// PRINTS entire cards as 1 String
+	// fmt.Println(cards.toString())
+
+	cards.saveToFile("my_cards")
 
 }
 
